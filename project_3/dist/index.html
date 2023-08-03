@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./output.css">
+    <title>Bike Store</title>
+</head>
+<body class="text-[#42454a] font-mon">
+    <header class="container px-3 md:px-5 lg:px-8 ">
+      <nav class="flex items-center justify-between   py-3 shadow-sm">
+            <a href="" class="flex-1">
+                <img src="./assets/logo.png" alt="" class="h-16 w-16 object-contain">
+            </a>
+            <ul class="list-none items-center justify-center gap-16 md:flex hidden flex-1">
+              <li><a href="" class="text-neutral-500 transition-all ease-in-out duration-300 hover:text-black">Product</a></li>
+              <li><a href="" class="text-neutral-500 transition-all ease-in-out duration-300 hover:text-black">Gallery</a></li>
+              <li><a href="" class="text-neutral-500 transition-all ease-in-out duration-300 hover:text-black">Contact</a></li>
+          </ul>
+          <div class="md:flex hidden items-center gap-4 flex-1 justify-end">
+              <a href="" class="w-[90px] h-10 flex items-center justify-center rounded-md transition-all ease-in-out duration-300 hover:bg-black hover:text-white">Login</a>
+              <a href="" class="w-[90px] h-10 flex items-center justify-center text-white bg-neutral-700 rounded-md transition-all ease-in-out duration-300 hover:bg-black">Sign Up</a>
+          </div>
+          <!-- mobile menu -->
+          <div class="h-10 w-10 flex items-center justify-cente md:hidden z-30" id="menu_bar">
+            <i class='bx bx-menu text-5xl text-black'></i>
+          </div>
+          <div class="mobile_menu fixed top-0 h-screen w-full bg-white z-10 flex items-center flex-col gap-8 justify-center md:hidden overflow-hidden ease-in-out transition-all duration-300" id="mobile_menu">
+            <ul >
+                <li class="mb-8 text-center"><a href="" class="text-3xl font-semibold text-black">Product</a></li>
+              <li class="mb-8 text-center"><a href="" class=" text-3xl font-semibold text-black">Gallery</a></li>
+              <li class="mb-8 text-center"><a href="" class=" text-3xl font-semibold text-black">Contact</a></li>
+              </ul>
+              <div class="flex items-center gap-2 justify-center">
+                <a href="" class="w-[90px] h-10 flex items-center justify-center bg-black rounded-md  text-white">Login</a>
+                <a href="" class="w-[90px] h-10 flex items-center justify-center bg-black rounded-md  text-white">Sign Up</a>
+            </div>
+          </div>
+      </nav>
+      <div class="py-8 flex flex-col-reverse md:flex-row items-center justify-center md:gap-0 gap-8">
+        <div class="w-full lg:w-6/12">
+            <h1 class=" lg:text-7xl md:text-6xl text-5xl">LET'S RIDE</h1>
+            <h1 class=" lg:text-7xl md:text-6xl text-5xl font-semibold mb-16">THE FUTURE.</h1>
+            <div class="h-[2px] w-80 bg-neutral-600 mb-9"></div>
+            <p class="w-80">Simple and sleek design with users mind</p>
+            <div class="flex items-center justify-between sm:justify-start gap-2 sm:gap-12 mt-9">
+              <div class="flex items-center  gap-3 ">
+                <div class="bg-neutral-600 w-12 h-12 flex items-center justify-center">
+                  <i class='bx bx-right-arrow-alt text-3xl text-white'></i>
+                </div>
+                <a href="" class="font-semibold text-black">Buy Now</a>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="">
+                  <p class="w-20 text-sm font-semibold">Watch our video how it works</p>
+                </div>
+                <div class="">
+                  <a href=""><img src="./assets/header play button.png" alt="" class="h-[65px]"></a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="w-full lg:w-6/12">
+          <img src="./assets/header image.png" alt="" class="w-full h-full">
+          <div class="flex justify-end items-center gap-12">
+            <div >
+              <img src="./assets/01.png" alt="" class="h-20">
+            </div>
+            <div class="w-24 h-10 border-[1px] border-solid border-neutral-600 flex overflow-hidden rounded-full">
+              <div class="h-10 w-6/12 flex items-center justify-center cursor-pointer hover:bg-neutral-950 hover:text-white"><i class='bx bx-chevron-left text-2xl'></i></div>
+              <div class="h-10 w-[1px] bg-neutral-600"></div>
+              <div class="h-10 w-6/12 flex items-center justify-center cursor-pointer hover:bg-neutral-950 hover:text-white"><i class='bx bx-chevron-right text-2xl'></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container py-16 md:py-12 px-3 md:px-5 lg:px-8">
+      <div class="grid grid-cols-2 md:gap-8 gap-4 md:grid-cols-3 lg:grid-cols-6 px-2 md:px-0">
+        <div class="px-4 py-8 flex flex-col justify-center items-center border-[1px] border-neutral-100  shadow-md hover:shadow-none hover:border-neutral-300 cursor-pointer rounded-md">
+          <h1 class="font-mon font-semibold text-4xl mb-4">105<span class="text-base pl-2">lbs</span></h1>
+          <p class="text-[11px] font-semibold font-mon">Net Weight</p>
+        </div>
+        <div class="px-4 py-8 flex flex-col justify-center items-center border-[1px] border-neutral-100  shadow-md hover:shadow-none hover:border-neutral-300 cursor-pointer rounded-md">
+          <h1 class="font-mon font-semibold text-4xl mb-4">36<span class="text-base pl-2">mph</span></h1>
+          <p class="text-[11px] font-semibold font-mon">Top Speed</p>
+        </div>
+        <div class="px-4 py-8 flex flex-col justify-center items-center border-[1px] border-neutral-100  shadow-md hover:shadow-none hover:border-neutral-300 cursor-pointer rounded-md">
+          <h1 class="font-mon font-semibold text-4xl mb-4">38<span class="text-base pl-2">miles</span></h1>
+          <p class="text-[11px] font-semibold font-mon">Max Range</p>
+        </div>
+        <div class="px-4 py-8 flex flex-col justify-center items-center border-[1px] border-neutral-100  shadow-md hover:shadow-none hover:border-neutral-300 cursor-pointer rounded-md">
+          <h1 class="font-mon font-semibold text-4xl mb-4">89<span class="text-base pl-2">nm</span></h1>
+          <p class="text-[11px] font-semibold font-mon">Max Torques</p>
+        </div>
+        <div class="px-4 py-8 flex flex-col justify-center items-center border-[1px] border-neutral-100  shadow-md hover:shadow-none hover:border-neutral-300 cursor-pointer rounded-md">
+          <h1 class="font-mon font-semibold text-4xl mb-4">22%<span class="text-base pl-2">slope</span></h1>
+          <p class="text-[11px] font-semibold font-mon">Hill Climbing</p>
+        </div>
+        <div class="px-4 py-8 flex flex-col justify-center items-center border-[1px] border-neutral-100  shadow-md hover:shadow-none hover:border-neutral-300 cursor-pointer rounded-md">
+          <h1 class="font-mon font-semibold text-4xl mb-4">2<span class="text-2xl font-bold">x</span></h1>
+          <p class="text-[11px] font-semibold font-mon">Hydraulic Disc Brake</p>
+        </div>
+      </div>
+    </section>
+    <section class="container py-16 md:py-12 px-3 md:px-5 lg:px-8">
+      <h1 class="text-center text-5xl font-bold mb-8">Product Information</h1>
+      <p class="text-center font-semibold text-1xl">Our scooter has following unique design and technology features:</p>
+      <div class="flex flex-col md:flex-row items-center justify-center py-4">
+        <div class="w-full md:w-7/12 text-left">
+          <img src="./assets/product information image.png" alt="">
+        </div>
+        <div class="w-full md:w-5/12 flex justify-start md:justify-end pr-0 md:pr-4 ">
+          <ul class="flex flex-col gap-8">
+            <li>
+              <div class="flex items-center gap-5">
+                <img src="./assets/Icon.png" alt="" class="h-10">
+                <h4 class="text-[14px] font-semibold">Lightweight aircraft grade aluminum frame</h4>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-5">
+                <img src="./assets/Icon.png" alt="" class="h-10">
+                <h4 class="text-[14px] font-semibold">Car grade lithium battery</h4>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-5">
+                <img src="./assets/Icon.png" alt="" class="h-10">
+                <h4 class="text-[14px] font-semibold">Self balanced</h4>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-5">
+                <img src="./assets/Icon.png" alt="" class="h-10">
+                <h4 class="text-[14px] font-semibold">Play n Plug</h4>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-5">
+                <img src="./assets/Icon.png" alt="" class="h-10">
+                <h4 class="text-[14px] font-semibold">Quick release adaptor</h4>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center gap-5">
+                <img src="./assets/Icon.png" alt="" class="h-10">
+                <h4 class="text-[14px] font-semibold">RFID key card</h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container py-16 md:py-12 px-3 md:px-5 lg:px-8">
+      <h1 class="text-center text-5xl font-bold mb-8">High Efficiency Motor</h1>
+      <p class="text-center font-semibold text-1xl">More torque for powerful riding with 22% maximum hill climbing capability</p>
+      <div class="py-8">
+        <img src="./assets/high efficiency motor.png" alt="" class="w-full">
+      </div>
+    </section>
+    <section class="container py-16 md:py-12 px-3 md:px-5 lg:px-8">
+      <h1 class="text-center text-5xl font-bold mb-8">Multiple Accessories</h1>
+      <p class="text-center font-semibold text-1xl">There are multiple modes for the scooter for your multiple needs</p>
+      <div class="py-24">
+        <div class="flex flex-col-reverse gap-16 md:gap-0 md:flex-row items-center justify-center mb-24">
+          <div class="w-full md:w-4/12">
+            <h1 class="text-3xl font-bold mb-8">Golf Bag Pack</h1>
+            <ul class="flex flex-col gap-8">
+              <li>
+                <div class="flex items-center gap-5">
+                  <img src="./assets/Icon.png" alt="" class="h-10">
+                  <h4 class="text-[14px] font-semibold">Material: Aluminum Alloy</h4>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-5">
+                  <img src="./assets/Icon.png" alt="" class="h-10">
+                  <h4 class="text-[14px] font-semibold">Color: Black</h4>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-5">
+                  <img src="./assets/Icon.png" alt="" class="h-10">
+                  <h4 class="text-[14px] font-semibold">Capacity: 45lbs</h4>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-5">
+                  <img src="./assets/Icon.png" alt="" class="h-10">
+                  <h4 class="text-[14px] font-semibold">Ease: Steady & Adjustable</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:w-8/12">
+            <img src="./assets/golf bag rock.png" alt="">
+          </div>
+        </div>
+        <div class="flex flex-col gap-16 md:gap-0 md:flex-row items-center justify-center">
+          <div class="w-full sm:w-7/12  pr-0 sm:pr-16">
+            <img src="./assets/shopping rack.png" alt="" class="w-full">
+          </div>
+          <div class="w-full md:w-5/12 pl-0 sm:pl-8 flex flex-col justify-center items-start md:items-center">
+            <h1 class="text-3xl font-bold mb-8">Golf Bag Pack</h1>
+            <ul class="flex flex-col gap-8">
+              <li>
+                <div class="flex items-center gap-5  ">
+                  <img src="./assets/Icon.png" alt="" class="h-10">
+                  <h4 class="text-[14px] font-semibold">Material: Aluminum Alloy</h4>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-5">
+                  <img src="./assets/Icon.png" alt="" class="h-10">
+                  <h4 class="text-[14px] font-semibold">Color: Black</h4>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-5">
+                  <img src="./assets/Icon.png" alt="" class="h-10">
+                  <h4 class="text-[14px] font-semibold">Capacity: 45lbs</h4>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-5 w-full">
+                  <img src="./assets/Icon.png" alt="" class="h-10">
+                  <h4 class="text-[14px] font-semibold">Ease: Steady & Adjustable</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mb-8 text-center">
+        <a href="" class="border-[1.5px] border-neutral-950 text-1xl text-neutral-950 font-semibold px-8 py-4 rounded-md hover:bg-neutral-950 hover:text-white duration-300 ease-in-out transition-all">More Accessories Coming Soon</a>
+      </div>
+    </section>
+    <section class="container pt-16 pb-1 md:py-12 px-3 md:px-5 lg:px-8">
+      <h1 class="text-center text-5xl font-bold mb-8">Gallery</h1>
+      <p class="text-center font-semibold text-1xl">View gallery of our product and make yourself satisfied with our creation</p>
+      <div class="py-24 flex gap-8 flex-col-reverse sm:flex-row items-end h-full">
+        <div class="w-full md:w-6/12 flex flex-col gap-8 h-full">
+          <div class="h-ful overflow-hidden relative z-10">
+            <img src="./assets/gallery scooter.png" alt="" class="w-full object-cover" >
+            <p class="absolute top-4 left-4 sm:left-8 z-20 font-semibold">Scooter</p>
+          </div>
+          <div class="overflow-hidden pb-8">
+            <ul class="flex
+            flex-col gap-8">
+              <li class="flex justify-center"><a href="" class="h-12 md:w-3/4 w-full flex items-center justify-center border-[1.5px] border-neutral-950 text-1xl text-neutral-950 font-semibold rounded-md hover:bg-neutral-950 hover:text-white duration-300 ease-in-out transition-all">Battery Image</a></li>
+              <li class="flex justify-center"><a href="" class="h-12 md:w-3/4 w-full flex items-center justify-center border-[1.5px] border-neutral-950 text-1xl text-neutral-950 font-semibold rounded-md hover:bg-neutral-950 hover:text-white duration-300 ease-in-out transition-all">Spare Part Image</a></li>
+              <li class="flex justify-center"><a href="" class="h-12 md:w-3/4 w-full flex items-center justify-center border-[1.5px] border-neutral-950 text-1xl text-neutral-950 font-semibold rounded-md hover:bg-neutral-950 hover:text-white duration-300 ease-in-out transition-all">Charging Cable Image</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full md:w-6/12 flex flex-col gap-8 h-full">
+          <div class="relative z-10 w-full">
+            <img src="./assets/gallery built quality.png" alt="" class="h-full">
+            <p class="absolute top-4 left-4 z-20 font-semibold">Build Quality</p>
+          </div>
+          <div class="relative z-10 w-full">
+            <img src="./assets/gallery parts.png" alt="" class="h-full ">
+            <p class="absolute top-4 left-4 z-20 font-semibold">Parts</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container py-16 md:py-12 px-3 md:px-5 lg:px-8">
+      <h1 class="text-center text-5xl font-bold mb-8">Color</h1>
+      <p class="text-center font-semibold text-1xl">Check out product Colors</p>
+      <div class="h-full md:h-[600px] flex flex-col items-center my-24 relative">
+        <img src="./assets/gallery scooter 2.png" alt="" class="h-full md:h-[450px] object-contain z-10">
+        <div class="h-full md:h-[250px] relative md:absolute bottom-0 md:bottom- left-0 right-0 w-full z-20 grid grid-cols-2 md:grid-cols-4">
+          <a href="" class=" h-[200px] flex justify-center items-center">
+            <img src="./assets/color-scooter-1.png" alt="">
+          </a>
+          <a href="" class=" h-[200px] flex justify-center items-center">
+            <img src="./assets/color-scooter-2.png" alt="">
+          </a>
+          <a href="" class=" h-[200px] flex justify-center items-center">
+            <img src="./assets/color-scooter-3.png" alt="">
+          </a>
+          <a href="" class=" h-[200px] flex justify-center items-center">
+            <img src="./assets/color-scooter-4.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="container py-16 md:py-12 px-3 md:px-5 lg:px-8">
+      <h1 class="text-center text-5xl font-bold mb-12">Testimonials</h1>
+      <div class="flex items-center justify-center flex-wrap gap-8">
+        <div class="flex flex-col justify-center px-6 py-10  gap-8 max-w-[20rem] w-full hover:shadow-2xl border-[1.5px] border-solid border-neutral-300 rounded-md hover:border-[1.5px] hover:border-solid hover:border-neutral-100">
+          <div class="flex items-center justify-center">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+          </div>
+          <p class="text-neutral-700 text-[16px] font-medium text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugit doloribus placeat nam, nostrum ipsum aliquid cum magni doloremque. Explicabo.</p>
+          <div class="flex items-center justify-center">
+            <a href="" class="flex gap-4"><img src="./assets/serhiy hipskyy.png" alt=""> 
+            <div class="flex flex-col">
+              <h4 class="text-black font-semibold text-[14px]">Serhiy Hipskky</h4>
+              <p class="font-semibold text-[10px]">CEO Universal</p>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center px-6 py-10  gap-8 max-w-[20rem] w-full hover:shadow-2xl border-[1.5px] border-solid border-neutral-300 rounded-md hover:border-[1.5px] hover:border-solid hover:border-neutral-100">
+          <div class="flex items-center justify-center">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+          </div>
+          <p class="text-neutral-700 text-[16px] font-medium text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugit doloribus placeat nam, nostrum ipsum aliquid cum magni doloremque. Explicabo.</p>
+          <div class="flex items-center justify-center">
+            <a href="" class="flex gap-4"><img src="./assets/Justus Menke.png" alt=""> 
+            <div class="flex flex-col">
+              <h4 class="text-black font-semibold text-[14px]">Justus Menke</h4>
+              <p class="font-semibold text-[10px]">CEO Universal</p>
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center px-6 py-10  gap-8 max-w-[20rem] w-full hover:shadow-2xl border-[1.5px] border-solid border-neutral-300 rounded-md hover:border-[1.5px] hover:border-solid hover:border-neutral-100">
+          <div class="flex items-center justify-center">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+            <img src="./assets/star.png" alt="">
+          </div>
+          <p class="text-neutral-700 text-[16px] font-medium text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugit doloribus placeat nam, nostrum ipsum aliquid cum magni doloremque. Explicabo.</p>
+          <div class="flex items-center justify-center">
+            <a href="" class="flex gap-4"><img src="./assets/Britain Eriksen.png" alt=""> 
+            <div class="flex flex-col">
+              <h4 class="text-black font-semibold text-[14px]">Britain Eriksen</h4>
+              <p class="font-semibold text-[10px]">CEO Universal</p>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 flex justify-center items-center gap-8">
+        <div class="h-10 w-10 flex items-center justify-center cursor-pointer hover:bg-neutral-700 hover:text-white  border-[1.5px] border-solid border-neutral-300 rounded-full"><i class='bx bx-chevron-left text-2xl'></i></div>
+        <div class="h-10 w-10 flex items-center justify-center cursor-pointer bg-neutral-700 text-white  border-[1.5px] border-solid border-neutral-300 rounded-full"><i class='bx bx-chevron-right text-2xl'></i></div>
+      </div>
+    </section>
+    <section class="container py-16 md:py-12 px-3 md:px-5 lg:px-8">
+      <h1 class="text-center text-4xl font-bold mb-8">Subscribe To Newsletter</h1>
+      <p class="text-center font-semibold text-1xl">Subscribe to our newsletter to get amazing offers in future</p>
+      <div class="flex items-center justify-center mt-8">
+        <form action="" class="flex items-center justify-center h-12 max-w-[24rem] w-full bg-slate-500 border-[1px] border-solid border-neutral-300 overflow-hidden rounded-md">
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" class="w-full h-full outline-none border-none pl-3">
+          <button class="outline-0 border-0 text-white text-[12px] font-semibold bg-[#42454a] h-full w-[8rem]">Get Start</button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-[#42454a] mt-32">
+      <div class="container md:py-12 pr-3 md:pr-5 lg:pr-8 ">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="w-full md:w-6/12 h-[17rem] relative">
+            <img src="./assets/footer scooter.png" alt="" class=" absolute bottom-0 h-[25rem]" >
+          </div>
+          <div class="w-full md:w-6/12 flex flex-wrap items-start justify-between px-3 gap-8">
+            <ul class="w-[10rem] md:w-auto">
+              <li class="text-lg text-white font-semibold mb-8">About</li>
+              <li class="mb-4"><a href="" class="text-neutral-300 text-[12px] font-medium">Company</a></li>
+              <li class="mb-4"><a href="" class="text-neutral-300 text-[12px] font-medium">Teams</a></li>
+              <li class="mb-4"><a href="" class="text-neutral-300 text-[12px] font-medium">Profiles</a></li>
+              <li class="mb-4"><a href="" class="text-neutral-300 text-[12px] font-medium">Careers</a></li>
+            </ul>
+            <ul class="w-[10rem] md:w-auto " ">
+              <li class="text-lg text-white font-semibold mb-8">Resources</li>
+              <li class="mb-4"><a href="" class="text-neutral-300 text-[12px] font-medium">Contact</a></li>
+              <li class="mb-4"><a href="" class="text-neutral-300 text-[12px] font-medium">Application</a></li>
+              <li class="mb-4"><a href="" class="text-neutral-300 text-[12px] font-medium">FAQ Features</a></li>
+              
+            </ul>
+            <ul class="w-[10rem] md:w-auto ">
+              <li class="text-lg text-white font-semibold mb-8">Legals</li>
+              <li class="mb-4"><a href="" class="text-neutral-300 text-[12px] font-medium">Copyright Privacy</a></li>
+              <li class="mb-4"><a href="" class="text-neutral-300 text-[12px] font-medium">Policy Disclaimer</a></li>
+              <li class="mb-4"><a href="" class="text-neutral-300 text-[12px] font-medium">Terms</a></li>
+              <li class="mb-4"><div class="flex items-center gap-4">
+                <a href="" class="bg-white w-6 h-6 flex items-center justify-center rounded-full"><i class='bx bxl-facebook' ></i></a>
+                <a href="" class="bg-white w-6 h-6 flex items-center justify-center rounded-full"><i class='bx bxl-twitter' ></i></a>
+                <a href="" class="bg-white w-6 h-6 flex items-center justify-center rounded-full"><i class='bx bxl-instagram' ></i></a>
+              </div></li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-4">
+          <span class="text-white text-[14px]">© Copyright 2023.All rights reserved</span>
+        </div>
+      </div>
+    </footer>
+    <!-- js -->
+    <script src="./external/script.js"></script>
+</body>
+</html>

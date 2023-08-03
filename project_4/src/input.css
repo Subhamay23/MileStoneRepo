@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  .mobile_menu {
+    left: -100%;
+  }
+  .mobile_menu.open {
+    left: 0;
+  }
+  .gradient_bg {
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(
+      circle at 0% 0%,
+      #cf50f7 0%,
+      #5528c4 25%,
+      #170e2b 100%,
+      #170e2b 100%
+    );
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(
+      circle at 0% 0%,
+      #cf50f7 0%,
+      #5528c4 25%,
+      #170e2b 100%,
+      #170e2b 100%
+    );
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(
+      circle at 0% 0%,
+      #cf50f7 0%,
+      #5528c4 25%,
+      #170e2b 100%,
+      #170e2b 100%
+    );
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(
+      circle at 0% 0%,
+      #cf50f7 0%,
+      #5528c4 25%,
+      #170e2b 100%,
+      #170e2b 100%
+    );
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(
+      circle at 0% 0%,
+      #cf50f7 0%,
+      #5528c4 25%,
+      #170e2b 100%,
+      #170e2b 100%
+    );
+  }
+  .bg-2
+  {
+      /* ff 3.6+ */
+      background: -moz-radial-gradient(circle at 0% 49%, rgba(68, 9, 139, 1) 0%, rgba(22, 14, 42, 1) 100%);
+  
+      /* safari 5.1+,chrome 10+ */
+      background: -webkit-radial-gradient(circle at 0% 49%, rgba(68, 9, 139, 1) 0%, rgba(22, 14, 42, 1) 100%);
+  
+      /* opera 11.10+ */
+      background: -o-radial-gradient(circle at 0% 49%, rgba(68, 9, 139, 1) 0%, rgba(22, 14, 42, 1) 100%);
+  
+      /* ie 10+ */
+      background: -ms-radial-gradient(circle at 0% 49%, rgba(68, 9, 139, 1) 0%, rgba(22, 14, 42, 1) 100%);
+  
+      /* global 92%+ browsers support */
+      background: radial-gradient(circle at 0% 49%, rgba(68, 9, 139, 1) 0%, rgba(22, 14, 42, 1) 100%);
+  }
+
+}
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.nav_border{
+    border-bottom: 1.5px solid white;
+    width: 100%;
+    left: 0;
+    right: 0;
+    max-width: 1500px;
+    margin:0 auto ;
+
+}
+nav{
+  z-index: 990;
+}
+.menu_icon i{
+  z-index: 999 !important;
+}
+
+.mobile_menu{
+  background-color: #00000055;
+  transition: all 300ms ease-in-out;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  overflow: hidden;
+  backdrop-filter:blur(8px) ;
+  z-index: 500;
+  
+}
+.mobile_menu.open{
+  height: 100vh;
+}
